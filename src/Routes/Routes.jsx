@@ -16,6 +16,7 @@ import MyTask from "../pages/Dashboard/MyTask";
 
 import OfferAnnouncements from "../pages/Dashboard/OfferAnnouncements";
 import Setting from "../pages/Dashboard/Setting";
+import TodayTask from "../pages/Dashboard/TodayTask";
 const CreateDRouter = createBrowserRouter([
   {
     path: "/",
@@ -80,6 +81,7 @@ const CreateDRouter = createBrowserRouter([
     children: [
       { path: "profile", element: <MyProfile></MyProfile> },
       { path: "my-task", element: <MyTask></MyTask> },
+      { path: "todays-task", element: <TodayTask></TodayTask> },
       { path: "announcements", element: <OfferAnnouncements></OfferAnnouncements> },
       { path: "settings", element: <Setting></Setting> },
     ],

@@ -46,7 +46,7 @@ export default function Sidebar() {
         </div>     
 
          <div  className=" lg:w-[90%] w-[70%] mx-auto ">
-          <NavLink className="px-5" to="/dashboard/add-new-task">
+          <NavLink className="px-5" to="/dashboard/todays-task">
             <i className="fa-sharp fa-regular fa-calendar-day mr-2 w-5"></i>
             <span className=" manu_item text-start lg:inline">Todays  Task</span>
           </NavLink>

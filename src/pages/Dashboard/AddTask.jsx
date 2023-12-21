@@ -34,7 +34,7 @@ export default function AddTask({CloseModel}) {
    formdata.description = form.target.description.value.trim();
    formdata.date = startDate || new Date()
    const err = [];
-   if( new Date().getDate() > new Date(startDate).getDate()){
+   if( new Date() > new Date(startDate)){
     toast.error("please Provide latest Date");
     err.push("please Provide latest Date");
    }

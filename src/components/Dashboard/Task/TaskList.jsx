@@ -17,10 +17,10 @@ const TaskList = ({ tasks, status, onTaskStatusChange }) => {
   });
 
   return (
-    <div ref={drop} style={{ border: isOver ? '2px dashed #000' : 'none' }}>
-      <h2>{status}</h2>
+    <div ref={drop} className={`rounded-lg  overflow-hidden ${tasks.length === 0 && "mb-10 "} `} style={{ border: isOver ? '2px dashed #000' : '2px dashed #00000000' }}>
+      <h2 className='text-xl sticky top-0 text-center bg-red-300 capitalize text-white py-3'>{status}</h2>  
       {tasks.map((task) => (
-        <Task key={task.id} task={task} />
+        <Task key={task._id} task={task} />
       ))}
     </div>
   );
