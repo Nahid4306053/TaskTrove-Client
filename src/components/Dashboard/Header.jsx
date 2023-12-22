@@ -4,7 +4,7 @@ import logo from "/images/color-logo.png";
 export default function Header() {
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-200">
       <div className="navbar-start">
       <img className="md:h-12 h-10 mt-2 ml-5" src={logo} alt="" />
       </div>

@@ -14,13 +14,13 @@ export default function TemplateMoodContext({ children }) {
     const mood = getmood();
     if(mood){
     if (mood === "light") {
-      // setDarkmood(false);
-      // const htmltag = document.querySelector("html");
-      // htmltag.setAttribute("data-theme", "light");
+      setDarkmood(false);
+      const htmltag = document.querySelector("html");
+      htmltag.setAttribute("data-theme", "light");
     } else {
-      // setDarkmood(true);              
-      // const htmltag = document.querySelector("html");
-      // htmltag.setAttribute("data-theme", "dark");
+      setDarkmood(true);              
+      const htmltag = document.querySelector("html");
+      htmltag.setAttribute("data-theme", "dark");
     }
   }
 

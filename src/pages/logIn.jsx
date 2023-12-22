@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import { Divider, TextField } from "@mui/material";
 import { useMutation } from "@tanstack/react-query";
 import React, { useRef, useState } from "react";
@@ -8,7 +10,7 @@ import Pagetitle from "../Hooks/Pagetitle";
 import ScrollTop from "../Hooks/ScrollTop";
 import EntrypointDesc from "../components/Authparts/EntrypointDesc";
 import log_bg from "/images/login_bg.jpg";
-import logo from "/images/logo.png";
+import logo from "/images/color-logo.png";
 export default function Login() {
   ScrollTop();
   const toastId = useRef(null);

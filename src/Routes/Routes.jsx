@@ -17,6 +17,8 @@ import MyTask from "../pages/Dashboard/MyTask";
 import OfferAnnouncements from "../pages/Dashboard/OfferAnnouncements";
 import Setting from "../pages/Dashboard/Setting";
 import TodayTask from "../pages/Dashboard/TodayTask";
+import Feture from "../pages/Feture";
+import Prinching from "../pages/Prinching";
 const CreateDRouter = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +38,14 @@ const CreateDRouter = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },   
+       {
+        path: "/fetures",
+        element: <Feture />,
+      },    
+         {
+        path: "/prinching",
+        element: <Prinching />,
       },
       {   
         path: "/contact",

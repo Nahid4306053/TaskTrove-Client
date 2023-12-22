@@ -1,73 +1,21 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import useTourType from "../../Hooks/useTourType";
-import "../../styles/Banner.scss";
-import BigError from "../shared/BigError";
-import Bigloading from "../shared/Bigloading";
 
 export default function BannerSection() {
-  const { isLoading, isError, isSuccess, tourTypes, error } = useTourType();
+  
 
   return (
-    <div className="w-full mx-auto  mt-32 lg:mt-[150px] h-[600px] md:h-[700px] lg:h-[800px]">
-      <div className="slider_Section col-span-full order-0 lg:order-1   lg:col-span-9">
-        {isLoading ? (
-          <Bigloading> </Bigloading>
-        ) : isError ? (
-          <BigError>Try again: {error.message}</BigError>
-        ) : (
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            pagination={{ clickable: true }}
-            navigation={true}
-            loop={true}
-            grabCursor={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="Bannerswiper  mx-auto overflow-hidden max-h-[800px] w-full h-full"
-          >
-            {tourTypes.data.map((ele) => {
-              return (
-                <SwiperSlide
-                  className=""
-                  style={{
-                    background: `url(${ele.thumbnail}) `,
-                    backgroundPosition: "center",
-                  }}
-                  key={ele._id}
-                >
-                  <div className="banneritem h-[600px] md:h-[800px] py-10  flex items-center">
-                    <div className="container  mx-auto">
-                      <div className="max-w-4xl mx-auto text-center space-y-5 md:space-y-8 details">
-                        <h1 className="md:text-2xl font-Montserrat text-xl text-yellow-400   font-bold">
-                          {ele.title}
-                        </h1>
-                        <h1 className="md:text-8xl italic font-Montserrat text-5xl  text-white  font-bold">
-                          {ele.slogan}
-                        </h1>
-                        <Link className="button-serv" to="/services">
-                          <button className="font-bold hover:bg-red-400   bg-red-400  text-red-100 rounded-none btn-md lg:btn-lg">
-                            View Packages
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        )}
-      </div>
-    </div>
+    <div className='bg-red-100 py-14'><div className="banner container mx-auto   flex items-center text-center">
+     <div className="px-10 w-full  relative  mx-auto">
+       <div className='flex xl:gap-0 gap-10 xl:flex-row flex-col  justify-end  w-full '>
+       <div className='details  order-1  top-[20%] xl:m-0 mx-auto xl:left-0 max-w-3xl xl:absolute'>
+        <h3 className=' mb-5 font-bold'>Unlock Productivity, Organize Effortlessly, Achieve More</h3>
+       <h1 className="text-3xl md:text-6xl text-red-300 font-bold italic ">TaskTrove Your Gateway to Seamless Task Management</h1>
+       <Link to="/dashboard/profile"><button className="btn bg-red-400 lg:btn-lg  text-white hover:bg-red-300 rounded-none  mt-5 lg:mt-10 capitalize">Get Started Now</button></Link>
+       </div>
+       <img className='xl:mt-40 lg:max-w-[60%] xl:mx-0 order-0 mx-auto' src="https://i.ibb.co/X5fBbX1/Management-Illustration.png" alt="" />
+       </div>
+     </div>
+    </div></div>
+    
   );
 }

@@ -22,7 +22,7 @@ export default function UserAvatar() {
     <div className="avatar   dropdown cursor-pointer  dropdown-hover ">
       <div
         className={`w-12 rounded-full ring ${
-          Darkmood ? "" : "ring-red-400  "
+          Darkmood ? "" : "ring-white  "
         }  ring-offset-base-100 ring-offset-2`}
       >
         <img
@@ -81,7 +81,7 @@ export default function UserAvatar() {
           </div>
           <div>
             <Link className="space-x-5" to="/dashboard/announcements">
-              <i className="fa-regular fa-bullhorn mr-2"></i>Offer Announces
+              <i className="fa-regular fa-bullhorn mr-2"></i>New Offers 
             </Link>
           </div>
         </div>

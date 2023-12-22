@@ -1,15 +1,13 @@
-import React from "react";
+
 
 export default function Newsletter() {
   return (
     <div
-      style={{
-        backgroundImage: "url(https://i.ibb.co/zNbdbqJ/Best-Banff-Hikes.jpg)",
-      }}
-      className="newslleter min-h-[400px] flex items-center"
+   
+      className="newslleter mt-14 min-h-[400px] flex items-center"
     >
       <div className="container relative   z-10 mx-auto my-20">
-        <div className={` text-center  font-Nunito space-y-3 md:space-y-0`}>
+        <div className={` text-center   space-y-3 md:space-y-0`}>
           <h3 className="subtile text-yellow-400   md:text-xl font-semibold">
             Get our Exiting Offers
           </h3>
@@ -23,8 +21,8 @@ export default function Newsletter() {
                 className="focus:outline-none p-3 w-full bg-white max-w-xs placeholder:"
                 placeholder="Type your email "
               />
-              <button className="bg-yellow-400  px-7 text-white">
-                Subscribe{" "}
+              <button className="bg-red-400  px-7 text-white">
+                Subscribe
               </button>
             </div>
           </div>

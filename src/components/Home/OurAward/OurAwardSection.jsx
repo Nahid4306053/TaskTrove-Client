@@ -1,85 +1,43 @@
-import { useMood } from "../../../Context/TemplateMoodContext";
-
 export default function OurAwardSection() {
-  const { Darkmood } = useMood();
   return (
-    <div className="bg-sky-400lg:h-[450px] py-20 lg:mb-40">
-      <div className={` text-center  font-Nunito space-y-3 md:space-y-3`}>
-        <h3 className="subtile text-yellow-400   md:text-xl font-semibold ">
-          Know More About us
-        </h3>
-        <h1 className="title leading-[60px]  mx-auto  max-w-3xl text-5xl text-white font-extrabold ">
-          TaskTrove Award Winning Top Rated Tour Operator
-        </h1>
-      </div>
-      <div className="container mx-auto mt-20 lg:mt-0">
-        <div className="grid grid-cols-1 font-Nunito lg:translate-y-1/4 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div
-            className={`Card py-10 px-14 hover:text-white hover:bg-red-400  transition-all group  ${
-              Darkmood ? "bg-base-300" : "bg-white"
-            }  text-center`}
-          >
-            <div
-              className={`icon group-hover:text-white ${
-                Darkmood ? "text-white" : "text-sky-900"
-              }     text-7xl mb-4 `}
-            >
-              <i className="fa-thin fa-hat-cowboy-side"></i>
-            </div>
-            <h2 className="text-title text-2xl font-bold ">
-              8000+ Our Local Guides
-            </h2>
-          </div>
-          <div
-            className={`Card py-10 px-14 hover:text-white hover:bg-red-400  transition-all group  ${
-              Darkmood ? "bg-base-300" : "bg-white"
-            }  text-center`}
-          >
-            <div
-              className={`icon group-hover:text-white ${
-                Darkmood ? "text-white" : "text-sky-900"
-              }     text-7xl mb-4 `}
-            >
-              <i className="fa-thin fa-thumbs-up"></i>
-            </div>
-            <h2 className="text-title text-2xl font-bold ">
-              100% Trusted Tour Agency
-            </h2>
-          </div>
-          <div
-            className={`Card py-10 px-14 hover:text-white hover:bg-red-400  transition-all group  ${
-              Darkmood ? "bg-base-300" : "bg-white"
-            }  text-center`}
-          >
-            <div
-              className={`icon group-hover:text-white ${
-                Darkmood ? "text-white" : "text-sky-900"
-              }     text-7xl mb-4 `}
-            >
-              <i className="fa-thin fa-barcode-read"></i>
-            </div>
-            <h2 className="text-title text-2xl font-bold ">
-              28+ Years of Travel Experience
-            </h2>
-          </div>
-          <div
-            className={`Card py-10 px-14 hover:text-white hover:bg-red-400  transition-all group  ${
-              Darkmood ? "bg-base-300" : "bg-white"
-            }  text-center`}
-          >
-            <div
-              className={`icon group-hover:text-white ${
-                Darkmood ? "text-white" : "text-sky-900"
-              }     text-7xl mb-4 `}
-            >
-              <i className="fa-thin fa-face-smile"></i>
-            </div>
-            <h2 className="text-title text-2xl font-bold ">
-              98% Our Travelers are Happy
-            </h2>
-          </div>
+    <>
+   <div className="container mx-auto my-20">
+      <div className="flex flex-col lg:flex-row  items-center gap-20">        
+      <div className="flex-1">
+          <img src="https://i.ibb.co/Jx73KGz/Project-Management-Illustration.jpg" alt="task" />
         </div>
+        <div className="flex-1 max-w-xl space-y-5">
+     
+          <h5 className="text-xl text-red-400 font-semibold">Focus on what’s important</h5>
+          <h1 className="text-4xl font-bold max-w-">Reach that mental clarity you’ve been longing for.</h1>
+          <p className="text-gray-500 text-lg leading-8">
+          Your tasks are automatically sorted into Today, Upcoming, and custom Filter views to help you prioritize your most important work.
+          </p>
+        </div>
+
       </div>
     </div>
+    <div className="container mx-auto my-20">
+      <div className="flex flex-col lg:flex-row gap-20 items-center">        
+
+        <div className="flex-1 order-1 lg:order-0 max-w-xl space-y-5">
+     
+          <h5 className="text-xl text-red-400 font-semibold">Clear your mind</h5>
+          <h1 className="text-4xl font-bold max-w-">The fastest way to get tasks out of your head.</h1>
+          <p className="text-gray-500 text-lg leading-8">
+            Type just about anything into the task field and Todoist’s
+            one-of-its-kind natural language recognition will instantly fill
+            your to-do list.
+          </p>
+        </div>
+      <div className="flex-1 order-0 lg:order-1 bg-b">
+
+          <img src="https://i.ibb.co/Z2jbhcp/isometric-time-management-concept-illustrated-52683-55534.jpg" alt="task" />
+        </div>
+      </div>
+    </div>     
+     
+    
+    </>
   );
 }

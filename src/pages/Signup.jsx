@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { Divider, TextField } from "@mui/material";
 import { useMutation } from "@tanstack/react-query";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { useAuth } from "../Context/AuthnicationContext";
@@ -9,7 +10,7 @@ import ScrollTop from "../Hooks/ScrollTop";
 import UploadIMG from "../Utils/UploadIMG";
 import EntrypointDesc from "../components/Authparts/EntrypointDesc";
 import log_bg from "/images/login_bg.jpg";
-import logo from "/images/logo.png";
+import logo from "/images/color-logo.png";
 
 export default function Signup() {
   ScrollTop();
@@ -111,18 +112,7 @@ export default function Signup() {
 
   return (
     <>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
       <Pagetitle>Sign up || TaskTrove</Pagetitle>
       <div
         style={{

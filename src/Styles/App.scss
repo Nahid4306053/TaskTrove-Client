@@ -71,15 +71,24 @@ $secondary : #A6CD96;
 .light{
  li{
     a{
+      padding: 1px 20px;
       background: none !important; 
       color: #ffffff !important;  
     }
  } 
  li{
     .active{
-      background: none !important; 
-      color: #1A1713 !important;  
-    }
+      background: none !important;
+      color: #F87171 !important;
+      background-color: rgb(255, 255, 255) !important;
+      border-radius: 2px ;
+      font-weight: bold;
+      -webkit-border-radius: 2px ;
+      -moz-border-radius: 2px ;
+      -ms-border-radius: 2px ;
+      -o-border-radius: 2px ;
+      
+}
  }
 }
 
@@ -171,14 +180,14 @@ $secondary : #A6CD96;
 }
 
 .newslleter{
-  background: rgba(0, 0, 0, 0.438) ;
+  background: #636e72;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center ;
    background-attachment: fixed;
 }
 
-@media screen and (max-width:945px) and (min-width:200px) {
+@media screen and (max-width:1260px) and (min-width:200px) {
   .sidebar{
     a{display: block;
      padding: 10px 13px;
@@ -209,4 +218,17 @@ $secondary : #A6CD96;
    
   }
 
+}
+
+.drawer-side{
+
+  a{
+    background: transparent !important;
+    margin: 5px 0px ;
+  }  
+  li{
+    .active{
+       background: #00000000 !important;
+    }
+  }
 }

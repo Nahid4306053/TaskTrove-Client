@@ -14,10 +14,10 @@ export default function Navber() {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/Fetures">Fetures</NavLink>
+        <NavLink to="/fetures">Fetures</NavLink>
       </li> 
        <li>
-        <NavLink to="/tour-guiders">Prinching</NavLink>
+        <NavLink to="/prinching">Prinching</NavLink>
       </li>
       <li>
         <NavLink to="/about">About us</NavLink>
@@ -43,7 +43,7 @@ export default function Navber() {
             <div className="flex-1  capitalize text-2xl font-bold">
               <Link to="/">
                 <img
-                  className={`lg:h-14  ${Darkmood && "grayscale"}   h-14`}
+                  className={`lg:h-16 py-2  ${Darkmood && "grayscale"}   h-16`}
                   src={logo}
                   alt=""
                 />
@@ -87,11 +87,11 @@ export default function Navber() {
         </div>
         <div className="drawer-side lg:hidden">
           <label htmlFor="my-drawer-3" className="drawer-overlay "></label>
-          <ul className="menu text-xl relative font-bold text-center   p-4 w-80 min-h-full bg-base-300">
+          <ul className="menu text-xl bg-red-200 relative font-bold text-center   p-4 w-80 min-h-full ">
             <div className="close z-50 absolute right-0 pr-5">
               <div className="flex-none lg:hidden">
                 <label htmlFor="my-drawer-3">
-                  <i className="fa-solid fa-xmark"></i>
+                  <i className="fa-solid text-white fa-xmark"></i>
                 </label>
               </div>
             </div>

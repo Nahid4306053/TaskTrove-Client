@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import { Link } from "react-router-dom";
+
+
 import { useMood } from "../Context/TemplateMoodContext";
 import Pagetitle from "../Hooks/Pagetitle";
 import ScrollTop from "../Hooks/ScrollTop";
 import Input from "../components/Input";
-import PageBanner from "../components/shared/PageBanner";
+
 export default function ContactUs() {
   ScrollTop();
   const { Darkmood } = useMood();
@@ -13,17 +13,6 @@ export default function ContactUs() {
     <>
       {" "}
       <Pagetitle>Contact us || TaskTrove</Pagetitle>
-      <PageBanner
-        title="Contact Us"
-        bgimg="https://i.ibb.co/jRrg30L/IMG-2019-06-06-011244-1024x682.jpg"
-      >
-        <div className="flex justify-center  text-white gap-2 text-xl mt-5">
-          <Link className="hover:text-yellow-400 " to="/">
-            Home
-          </Link>{" "}
-          / Contact us{" "}
-        </div>
-      </PageBanner>
       <div className="my-28  container gap-10 mx-auto flex flex-col md:flex-row">
         <div className="flex-1 conatct_info my-5">
           <div className="meadia">
@@ -35,7 +24,7 @@ export default function ContactUs() {
               >
                 Contact Us
               </h1>
-              <h1 className="text-xl   text-yellow-400   font-semibold">
+              <h1 className="text-xl   text-black   font-semibold">
                 Let us know what you think
               </h1>
               <p className="text-lg">
@@ -58,7 +47,7 @@ export default function ContactUs() {
                 ></i>
               </div>
               <div className="det">
-                <h3 className="text-xl   text-yellow-400   font-semibold">
+                <h3 className="text-xl   text-black   font-semibold">
                   Call us directly
                 </h3>
                 <p className="text-lg  opacity-70"> (+88) 01954849695</p>
@@ -78,7 +67,7 @@ export default function ContactUs() {
                 ></i>
               </div>
               <div className="det">
-                <h3 className="text-xl   text-yellow-400   font-semibold">
+                <h3 className="text-xl   text-black   font-semibold">
                   Fax us{" "}
                 </h3>
                 <p className="text-lg  opacity-70"> (+88) 1757 555 1234</p>
@@ -87,7 +76,7 @@ export default function ContactUs() {
             <div className="flex items-center gap-4">
               <div
                 className={` icon rounded-full  items-center flex justify-center  text-4xl h-20 w-20  ${
-                  Darkmood ? "border-sky-400" : "border-red-400  "
+                  Darkmood ? "border-red-400" : "border-red-400  "
                 }  border-2`}
               >
                 <i
@@ -97,7 +86,7 @@ export default function ContactUs() {
                 ></i>
               </div>
               <div className="det">
-                <h3 className="text-xl   text-yellow-400   font-semibold">
+                <h3 className="text-xl   text-black   font-semibold">
                   Mail us{" "}
                 </h3>
                 <p className="text-lg  opacity-70"> ku4306053@gmail.com</p>
@@ -117,7 +106,7 @@ export default function ContactUs() {
                 ></i>
               </div>
               <div className="det">
-                <h3 className="text-xl   text-yellow-400   font-semibold">
+                <h3 className="text-xl   text-black   font-semibold">
                   Vist our place
                 </h3>
                 <p className="text-lg  opacity-70">
@@ -138,7 +127,7 @@ export default function ContactUs() {
                 Darkmood ? "text-sky-400" : "text-red-400  "
               }  flex-wrap justify-between font-bold`}
             >
-              <p>Let's Meet</p>
+              <p>Let's Talk</p>
             </div>
           </div>
           <div className="card  flex-shrink-0 w-full ">
@@ -178,7 +167,7 @@ export default function ContactUs() {
               </div>
 
               <div className="form-control mt-3 col-span-full ">
-                <button className="btn btn-info text-white">
+                <button className="btn bg-red-400 hover:bg-red-400 text-white">
                   Send Message
                 </button>
               </div>

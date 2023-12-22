@@ -17,14 +17,10 @@ export default function EntrypointDesc() {
       <div className="relative p-10 z-10 flex items-end h-full  text-title">
         <div className="space-y-10">
           <h1 className="text-3xl">
-            Embark on Unforgettable Journeys with TaskTrove - Where Every
-            Adventure Begins
+          TaskOver - Elevate Your Productivity with Seamless Task Managemen
           </h1>
           <p className="leading-8 text-lg">
-            Welcome to TaskTrove, your gateway to unparalleled adventures and
-            exploration. At TaskTrove, we believe that every journey is a story
-            waiting to be told, and we're here to guide you through the chapters
-            of extraordinary experiences.
+          Experience the next level of productivity with TaskOver, your go-to task management solution. Streamline your workflow, collaborate effortlessly, and achieve more with our intuitive platform. Say goodbye to chaos and hello to efficiency - TaskOver makes managing tasks a breeze!
           </p>
         </div>
       </div>
