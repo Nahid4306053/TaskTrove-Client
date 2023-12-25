@@ -21,84 +21,82 @@ export default function Footer() {
             />
             <br />
             <div className="info mt-2 flex gap-4 items-center">
-             
               <div className="location">
                 <p className="text-md text-gray-500 ">
-                Join the Thriving Community Embracing Todoist for Streamlined Work and Life Organization.
+                  Join the Thriving Community Embracing TaskTrove for
+                  Streamlined Work and Life Organization.
                 </p>
               </div>
             </div>
-
           </div>
           <div className="links mt-10">
             <h1 className="shops mt-4 text-xl font-bold text-red-400  ">
-            Features
+              Features
             </h1>
             <ul className="mt-8 w-auto ">
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              How It Works
+                How It Works
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              For Teams
+                For Teams
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
                 Sale and Special offers
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Pricing
+                Pricing
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Templates
-              </li>
-            </ul>
-          </div>          
-          <div className="links mt-10">
-            <h1 className="shops mt-4 text-xl font-bold text-red-400  ">
-            Resources
-            </h1>
-            <ul className="mt-8 w-auto ">
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Help Center
-              </li>
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Productivity Methods
-              </li>
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Integrations
-              </li>
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Channel Partners
-              </li>
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Developer API
-              </li>              
-              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Status
+                Templates
               </li>
             </ul>
           </div>
-  
           <div className="links mt-10">
             <h1 className="shops mt-4 text-xl font-bold text-red-400  ">
-            Company
+              Resources
             </h1>
             <ul className="mt-8 w-auto ">
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              About Us
+                Help Center
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Careers
+                Productivity Methods
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Inspiration Hub
+                Integrations
+              </li>
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                Channel Partners
+              </li>
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                Developer API
+              </li>
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                Status
+              </li>
+            </ul>
+          </div>
+
+          <div className="links mt-10">
+            <h1 className="shops mt-4 text-xl font-bold text-red-400  ">
+              Company
+            </h1>
+            <ul className="mt-8 w-auto ">
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                About Us
+              </li>
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                Careers
+              </li>
+              <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
+                Inspiration Hub
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
                 Press
               </li>
               <li className="leading-10 hover:text-red-400  hover:underline cursor-pointer">
-              Twist
+                Twist
               </li>
-
             </ul>
           </div>
         </div>

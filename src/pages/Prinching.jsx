@@ -7,7 +7,7 @@ export default function Prinching() {
       <div className="container mx-auto lg:my-24 my-14">
         <div className=" w-full gap-20 items-center">
           <div className="max-w-xl mx-auto text-center space-y-5">
-            <h1 className="text-6xl font-bold max-w-xl">
+            <h1 className="lg:text-6xl text-2xl font-bold max-w-xl">
             Choose the Perfect Plan for Your Productivity
             </h1>
             <p className="text-gray-500 text-lg leading-8">
